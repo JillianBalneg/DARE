@@ -38,6 +38,7 @@ class StepCounterActivity : AppCompatActivity() {
                 binding.tvCalories.text = Util.calculateCalories(steps)
                 binding.tvMainSteps.text = "Steps: $steps"
                 //binding.ivOn.setImageDrawable(resources.getDrawable(R.drawable.on_element))
+                binding.ivOn.setText("Stop")
                 startForegroundService(steps)
             }
         })
@@ -55,6 +56,7 @@ class StepCounterActivity : AppCompatActivity() {
     private fun startForegroundService(steps: Int) {
         mSensorManager!!.registerListener(mStepCounter, mAccelerometer, SensorManager.SENSOR_DELAY_UI)
         //binding.ivOn.setImageDrawable(resources.getDrawable(R.drawable.on_element))
+        binding.ivOn.setText("Stop")
 
         val serviceIntent = Intent(this, PedometerService::class.java)
         serviceIntent.putExtra("steps", steps)
@@ -64,6 +66,7 @@ class StepCounterActivity : AppCompatActivity() {
     private fun stopForegroundService() {
         mSensorManager!!.unregisterListener(mStepCounter)
         //binding.ivOn.setImageDrawable(resources.getDrawable(R.drawable.off_element))
+        binding.ivOn.setText("Start")
 
         val serviceIntent = Intent(this, PedometerService::class.java)
         stopService(serviceIntent)
