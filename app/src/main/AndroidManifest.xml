@@ -16,9 +16,7 @@
         <activity
             android:name=".StepCounterActivity"
             android:exported="true" />
-        <activity
-            android:name=".StepCounter"
-            android:exported="true" /> <!-- BeginnerAbsStart -->
+ <!-- BeginnerAbsStart -->
         <activity
             android:name=".JumpingJacksActivity"
             android:exported="true" />
