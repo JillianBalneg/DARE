@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DARE</string>
+    <string name="no_account">Not have account? <b>SignUp</b></string>
+    <!--    <string name="formatted_time">%02d:%02d</string>-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string><!--make signup bold-->
+
+    <string name="formatted_time">%02d:%02d</string>
+</resources>

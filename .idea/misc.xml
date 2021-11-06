@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/drawable/background.xml" value="0.2203125" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/drawable/bg_shape.xml" value="0.2203125" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/drawable/ic_baseline_check_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/drawable/roundcorner.xml" value="0.2203125" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/drawable/shape.xml" value="0.2203125" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_abdominal_crunches.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_abs_beginner.xml" value="0.25" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_back_pop_up_window.xml" value="0.1671195652173913" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_beginner.xml" value="0.22" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_heel_touch.xml" value="0.16259057971014493" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_home.xml" value="0.21" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_home_test.xml" value="0.25" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_home_test2.xml" value="0.161231884057971" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_jumping_jacks.xml" value="0.22" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_leg_raises.xml" value="0.16259057971014493" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_mountain_climber_main.xml" value="0.16259057971014493" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_plank.xml" value="0.16259057971014493" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_pop_up_window.xml" value="0.25" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_popup_window.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_profile.xml" value="0.22" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_reminder.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_rest.xml" value="0.21" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_rest1.xml" value="0.1" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_rest2.xml" value="0.16259057971014493" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_rest3.xml" value="0.16259057971014493" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_rest4.xml" value="0.16259057971014493" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_rest5.xml" value="0.16259057971014493" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_rest6.xml" value="0.16259057971014493" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_russian_twist.xml" value="0.16259057971014493" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_selector.xml" value="0.25" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_sign_up.xml" value="0.18206521739130435" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_step_counter.xml" value="0.25" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/activity_test.xml" value="0.16530797101449277" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/alertdialog.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/fragment_heel_touch.xml" value="0.17481884057971014" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/fragment_jumping_jacks.xml" value="0.17481884057971014" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/fragment_popup.xml" value="0.1621376811594203" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/list_item.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/list_item_absb.xml" value="0.1621376811594203" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/layout/popup.xml" value="0.2" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/DARE/app/src/main/res/menu/bottom_menu.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

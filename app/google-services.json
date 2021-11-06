@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "180912493877",
+    "project_id": "dare-ea333",
+    "storage_bucket": "dare-ea333.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180912493877:android:542639898a25264117a87c",
+        "android_client_info": {
+          "package_name": "com.example.dare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "180912493877-fr0ooguv01tsjre1uav2r7305ers3veg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dare",
+            "certificate_hash": "d9ea4d1b9cd12f5e445fac2b90a13dd1fda2156e"
+          }
+        },
+        {
+          "client_id": "180912493877-ruqhoc3tqq824uqpla72h6diakoirpd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3nZvpiTwpGOzRc6e-dQV1XzZgRhDq6WQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "180912493877-ruqhoc3tqq824uqpla72h6diakoirpd2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
