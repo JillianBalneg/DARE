@@ -6,4 +6,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string><!--make signup bold-->
 
     <string name="formatted_time">%02d:%02d</string>
+
+    <string name="channel_name">pedometer channel</string>
+    <string name="channel_description">no description</string>
 </resources>
