@@ -1,4 +1,4 @@
-package com.example.dare
+package com.example.dare.pedometer
 
 object Constants
 val CHANNEL_ID = "7"

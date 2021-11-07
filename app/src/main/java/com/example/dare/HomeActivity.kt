@@ -3,8 +3,10 @@ package com.example.dare
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.dare.bmi.NewProfileActivity
 
 import com.example.dare.databinding.ActivityHomeBinding
+import com.example.dare.pedometer.StepCounterActivity
 
 class HomeActivity : AppCompatActivity() {
 
@@ -18,7 +20,7 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.d1.setOnClickListener {
-            startActivity(Intent(this, ProfileActivity::class.java))
+            startActivity(Intent(this, NewProfileActivity::class.java))
         }
         binding.d3.setOnClickListener {
             startActivity(Intent(this, SelectorActivity::class.java))

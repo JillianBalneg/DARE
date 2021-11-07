@@ -16,4 +16,16 @@
 <!--        <item name="android:windowTranslucentNavigation">true</item>-->
 
     </style>
+
+    <style name="roundedAppearance">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="AlertDialogAppearance" parent="Theme.MaterialComponents.Dialog.Alert">
+        <!--Buttons-->
+        <item name="colorPrimary">@color/theme</item>
+        <!--Background-->
+        <item name="android:background">@color/dialog_background</item>
+    </style>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.dare
+package com.example.dare.pedometer
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -25,6 +25,7 @@ class StepCounterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityStepCounterBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         mSensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
         mAccelerometer = mSensorManager!!.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
 
@@ -71,5 +72,7 @@ class StepCounterActivity : AppCompatActivity() {
         val serviceIntent = Intent(this, PedometerService::class.java)
         stopService(serviceIntent)
     }
+
+
 
 }

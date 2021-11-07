@@ -1,4 +1,4 @@
-package com.example.dare
+package com.example.dare.pedometer
 
 import java.text.DecimalFormat
 

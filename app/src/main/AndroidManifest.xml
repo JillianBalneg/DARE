@@ -2,9 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.dare">
     <!-- internet permission -->
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" >
+
+    </uses-permission>
 
     <application
         android:allowBackup="true"
@@ -14,9 +16,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DARE">
         <activity
-            android:name=".StepCounterActivity"
+            android:name=".bmi.NewProfileActivity"
             android:exported="true" />
- <!-- BeginnerAbsStart -->
+        <activity
+            android:name=".pedometer.StepCounterActivity"
+            android:exported="true" /> <!-- BeginnerAbsStart -->
         <activity
             android:name=".JumpingJacksActivity"
             android:exported="true" />
@@ -98,6 +102,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".pedometer.PedometerService" />
     </application>
 
 </manifest>

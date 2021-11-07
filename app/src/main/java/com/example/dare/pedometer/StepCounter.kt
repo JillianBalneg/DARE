@@ -1,9 +1,9 @@
-package com.example.dare
+package com.example.dare.pedometer
 
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
-import com.example.dare.Util.addAxisValuesToArray
+import com.example.dare.pedometer.Util.addAxisValuesToArray
 import java.util.*
 
 class StepCounter(private val mStepDetector: StepDetector) : SensorEventListener {
