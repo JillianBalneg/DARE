@@ -79,7 +79,7 @@
             android:name=".IntermediateActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".loginRegister.LoginActivity"
             android:exported="true" />
         <activity
             android:name=".BeginnerActivity"
@@ -91,7 +91,7 @@
             android:name=".ProfileActivity"
             android:exported="true" />
         <activity
-            android:name=".SignUpActivity"
+            android:name=".loginRegister.SignUpActivity"
             android:exported="true" />
         <activity
             android:name=".HomeActivity"

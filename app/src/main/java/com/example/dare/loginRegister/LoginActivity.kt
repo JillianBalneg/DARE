@@ -1,4 +1,4 @@
-package com.example.dare
+package com.example.dare.loginRegister
 
 import android.app.ProgressDialog
 import android.content.Intent
@@ -7,16 +7,12 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Toast
-import androidx.appcompat.app.ActionBar
+import com.example.dare.ProfileActivity
 import com.example.dare.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
-    //viewBinding
     private lateinit var binding: ActivityLoginBinding
-
-    //Actionbar
-    private lateinit var actionBar: ActionBar
 
     //ProgressDialog
     private lateinit var progressDialog: ProgressDialog
@@ -30,10 +26,6 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        //config actionBar
-        //val actionBar = supportActionBar!!
-        //actionBar.title = "Login"
 
         //progress Dialog
         progressDialog = ProgressDialog(this)
@@ -61,22 +53,23 @@ class LoginActivity : AppCompatActivity() {
     }
     private fun validateData() {
         //get data
+        binding.run {
+            email = emailEt.text.toString().trim()
+            password = passwordEt.text.toString().trim()
 
-        email = binding.emailEt.text.toString().trim()
-        password = binding.passwordEt.text.toString().trim()
-
-        //validate data
-        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            //invalid email format
-            binding.emailEt.error = "invalid email format"
-        }
-        else if (TextUtils.isEmpty(password)) {
-            //no password entered
-            binding.passwordEt.error = "please enter password"
-        }
-        else{
-            //data is validate, begin login
-            firebaseLogin()
+            //validate data
+            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                //invalid email format
+                emailEt.error = "invalid email format"
+            }
+            else if (TextUtils.isEmpty(password)) {
+                //no password entered
+                passwordEt.error = "please enter password"
+            }
+            else{
+                //data is validate, begin login
+                firebaseLogin()
+            }
         }
     }
     private fun firebaseLogin() {

@@ -1,4 +1,4 @@
-package com.example.dare
+package com.example.dare.loginRegister
 
 import android.app.ProgressDialog
 import android.content.Intent
@@ -8,6 +8,7 @@ import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
+import com.example.dare.ProfileActivity
 import com.example.dare.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 

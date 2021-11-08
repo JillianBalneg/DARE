@@ -7,6 +7,8 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import com.example.dare.databinding.ActivityProfileBinding
+import com.example.dare.loginRegister.LoginActivity
+import com.example.dare.loginRegister.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase

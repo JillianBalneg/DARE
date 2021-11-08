@@ -1,5 +1,6 @@
 package com.example.dare.bmi
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -28,6 +29,8 @@ class NewProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityNewProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        loadData()
 
         viewModel = ViewModelProvider(
             this,
@@ -96,9 +99,8 @@ class NewProfileActivity : AppCompatActivity() {
                     // Calculate
                     val person = Person(getGender(), getHeight(), getWeight(), getAge())
                     viewModel.setStateEvent(person, StateEventCalc.StateEvent)
+                    saveData()
                 }
-
-
             }
         }
     }
@@ -125,6 +127,39 @@ class NewProfileActivity : AppCompatActivity() {
             sliderAge.addOnChangeListener { _, value, _ ->
                 textAge.text = value.toInt().toString()
             }
+        }
+    }
+
+    private fun saveData(){
+        binding.run {
+            val insertHeight: String = textHeight.text.toString()
+            val insertWeight: String = textWeight.text.toString()
+            val insertAge: String = textAge.text.toString()
+            textHeight.setText(insertHeight)
+            textWeight.setText(insertWeight)
+            textAge.setText(insertAge)
+
+            val sharedPreferences = getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
+            val editor = sharedPreferences.edit()
+            editor.apply{
+                putString("STRING_KEY1", insertHeight)
+                putString("STRING_KEY2", insertWeight)
+                putString("STRING_KEY3", insertAge)
+            }.apply()
+        }
+        Toast.makeText(this,"Data Saved",Toast.LENGTH_LONG).show()
+    }
+
+    private fun loadData(){
+        val sharedPreferences = getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
+        val savedString1 = sharedPreferences.getString("STRING_KEY1", null)
+        val savedString2 = sharedPreferences.getString("STRING_KEY2", null)
+        val savedString3 = sharedPreferences.getString("STRING_KEY3", null)
+
+        binding.run {
+            textHeight.setText(savedString1)
+            textWeight.setText(savedString2)
+            textAge.setText(savedString3)
         }
     }
 
@@ -183,6 +218,5 @@ class NewProfileActivity : AppCompatActivity() {
         // Get value from Shared Preferences Zero is default
         val child = PrefsUtil.getPref(this)
             .getInt(PrefsUtil.PREF_KEY_MODE_NIGHT, 0)
-
     }
 }

@@ -1,4 +1,4 @@
-package com.example.dare
+package com.example.dare.loginRegister
 
 data class User(
     var uEmail: String? = null,
