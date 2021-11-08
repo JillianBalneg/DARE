@@ -7,37 +7,30 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Toast
-import androidx.appcompat.app.ActionBar
-import com.example.dare.ProfileActivity
+import com.example.dare.bmi.NewProfileActivity
 import com.example.dare.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
 
 class SignUpActivity : AppCompatActivity() {
 
     //viewBinding
     private lateinit var binding: ActivitySignUpBinding
-
-    //ActionBar
-    private lateinit var actionBar: ActionBar
-
     //progressDialog
     private lateinit var progressDialog: ProgressDialog
-
     //firebase
     private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var databaseReference: DatabaseReference
+
 
     private var email = ""
     private var password = ""
+    private var name = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //config ActionBar // enable back btn
-        actionBar = supportActionBar!!
-        actionBar.title = "Sign Up"
-        actionBar.setDisplayHomeAsUpEnabled(true)
-        actionBar.setDisplayShowHomeEnabled(true)
 
         progressDialog = ProgressDialog(this)
         progressDialog.setTitle("please wait")
@@ -76,6 +69,7 @@ class SignUpActivity : AppCompatActivity() {
 
     }
     private fun firebaseSignUp() {
+
         // show progress
         progressDialog.show()
         //create account
@@ -88,7 +82,10 @@ class SignUpActivity : AppCompatActivity() {
                 Toast.makeText(this, "Account Created with Email  $email", Toast.LENGTH_LONG).show()
 
                 //open profile
-                startActivity(Intent(this, ProfileActivity::class.java))
+                val i = Intent(this,NewProfileActivity::class.java)
+                i.putExtra("name",binding.nameEt.text.toString())
+                startActivity(i)
+
                 finish()
             }
             .addOnFailureListener{e->

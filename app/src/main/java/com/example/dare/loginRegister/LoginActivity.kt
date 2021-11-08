@@ -7,7 +7,9 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Toast
+import com.example.dare.HomeActivity
 import com.example.dare.ProfileActivity
+import com.example.dare.bmi.NewProfileActivity
 import com.example.dare.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -45,11 +47,6 @@ class LoginActivity : AppCompatActivity() {
             //before logged in, validate data
             validateData()
         }
-        //later btn
-        binding.laterBtn.setOnClickListener {
-            startActivity(Intent(this, ProfileActivity::class.java))
-        }
-
     }
     private fun validateData() {
         //get data
@@ -84,7 +81,7 @@ class LoginActivity : AppCompatActivity() {
                 val email = firebaseUser!!.email
                 Toast.makeText(this, "LoggedIn as $email", Toast.LENGTH_SHORT).show()
                 //open profile
-                startActivity(Intent(this, ProfileActivity::class.java))
+                startActivity(Intent(this, HomeActivity::class.java))
                 finish()
             }.addOnFailureListener { e ->
                 //login failed
@@ -99,7 +96,7 @@ class LoginActivity : AppCompatActivity() {
         val firebaseUser = firebaseAuth.currentUser
         if (firebaseUser != null) {
             //user is logged in
-            startActivity(Intent(this, ProfileActivity::class.java))
+            startActivity(Intent(this, NewProfileActivity::class.java))
             finish()
         }
     }

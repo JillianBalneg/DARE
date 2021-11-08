@@ -67,16 +67,6 @@
         android:layout_marginTop="10dp"
         android:text="Login" />
 
-    <Button
-        android:id="@+id/laterBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/loginBtn"
-        android:layout_marginTop="10dp"
-        android:text="Later" />
-
-
-
     <!--not have account Sign up-->
     <TextView
         android:id="@+id/noAccountTv"
